@@ -4,9 +4,10 @@ import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero2'
-import { TertiaryFeatures } from '@/components/TerciaryFeatures'
+import { TertiaryFeatures } from '@/components/TertiaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { SingleTestimonial } from '@/components/SingleTestimonial'
+import { Pricing } from '@/components/Pricing'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         {/* <PrimaryFeatures /> */}
         <TertiaryFeatures/>
+        <Pricing/>
         <SecondaryFeatures />
         <CallToAction />
         <SingleTestimonial/>
