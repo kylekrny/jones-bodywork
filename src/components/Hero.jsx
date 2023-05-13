@@ -4,10 +4,11 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import exercise from "@/images/exercise.png"
 import Image from 'next/image'
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About', href: '#' },
+  { name: 'Pricing', href: '#' },
+  { name: 'Thought of The Day', href: '#' },
+  { name: 'Testimonials', href: '#' },
+  { name: 'FAQ', href: '#' },
 ]
 
 export function Hero() {

@@ -5,11 +5,11 @@ import profile from '@/images/profile.jpg'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-  { name: 'Log in', href: '#' },
+  { name: 'About', href: '#' },
+  { name: 'Pricing', href: '#' },
+  { name: 'Blog', href: '#' },
+  { name: 'Testimonials', href: '#' },
+  { name: 'FAQ', href: '#' },
 ]
 
 export function Hero() {
@@ -122,7 +122,7 @@ export function Hero() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex">
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                     Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
                     <a
                       href="#"
@@ -131,7 +131,7 @@ export function Hero() {
                       <span className="absolute inset-0" aria-hidden="true" />
                       Read more <span aria-hidden="true">&rarr;</span>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                   Massage therapist that listens to you.
