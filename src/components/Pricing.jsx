@@ -15,10 +15,8 @@ export function Pricing() {
               Fair and simple pricing
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600">
-              The time you're paying for is actual massage time. When you pay
-              for a hour long session, you will get exactly a hour long session.
-              Most of the companies in bodywork charge for an hour, but only
-              give you 50 minutes. I believe in being fair. My prices are not
+              The time you&apos;re paying for is actual massage time. When you pay
+              for a hour long session, you will get an hour long session. I believe in being fair. My prices are not
               going to make me rich, and I am okay with that.
             </p>
           </div>
@@ -34,6 +32,11 @@ export function Pricing() {
               </div>
             ))}
           </dl>
+          <div className="text-center">
+            <p className="mt-8 font-bold text-lg leading-8 text-gray-600">
+              Actual table time. Tips not accepted.
+            </p>
+          </div>
         </div>
       </div>
     </div>

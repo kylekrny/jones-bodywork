@@ -31,16 +31,16 @@ export function Footer() {
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
-              href="mailto:hello@fixmyschitt.com"
+              href="mailto:jeff@jonesbodywork.com"
               className="group"
-              aria-label="Fix My Schitt email"
+              aria-label="Jeff Jones Email"
             >
-              hello@fixmyschitt.com
+              jeff@jonesbodywork.com
             </Link>
             <Link
               href="tel:7206757448"
               className="group"
-              aria-label="Fix My Schitt phone number"
+              aria-label="Jeff Jones phone number"
             >
               (720) 675-7448
             </Link>
@@ -53,7 +53,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Fix My Schitt. All
+            Copyright &copy; {new Date().getFullYear()} Jones Bodywork. All
             rights reserved.
           </p>
         </div>
