@@ -1,4 +1,4 @@
-import profile from '@/images/profile.jpg'
+import profile from '@/images/jeff.jpeg'
 import Image from 'next/image'
 import { Header } from './Header'
 

@@ -14,17 +14,16 @@ export function Footer() {
             <Logo className="mx-auto h-10 w-auto" />
             <Button href="/contact" color="blue" className="mt-6">
               <span>
-                Contact <span className="hidden lg:inline">us</span>
+                Contact <span className="hidden lg:inline">me</span>
               </span>
             </Button>
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="/#services">Services</NavLink>
-              <NavLink href="/#principles">Principles</NavLink>
-              {/* <NavLink href="/#testimonials">Testimonials</NavLink>
-              <NavLink href="/#faq">FAQ</NavLink> */}
-              {/* <NavLink href="/#pricing">Pricing</NavLink> */}
+              <NavLink href="/#about">About</NavLink>
+              <NavLink href="/#pricing">Pricing</NavLink>
+              <NavLink href="/#pricing">Faq</NavLink>
+              <NavLink href="/#pricing">Reviews</NavLink>
             </div>
           </nav>
         </div>
@@ -42,14 +41,7 @@ export function Footer() {
               className="group"
               aria-label="Jeff Jones phone number"
             >
-              (720) 675-7448
-            </Link>
-            <Link
-              href="https://instagram.com/fixmyschitt"
-              target="_blank"
-              noreferrer
-            >
-              @fixmyschitt
+              (720) 480-4979
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
