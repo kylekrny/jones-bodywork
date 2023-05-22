@@ -22,8 +22,8 @@ export function Footer() {
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="/#about">About</NavLink>
               <NavLink href="/#pricing">Pricing</NavLink>
-              <NavLink href="/#pricing">Faq</NavLink>
-              <NavLink href="/#pricing">Reviews</NavLink>
+              <NavLink href="/faq">Faq</NavLink>
+              <NavLink href="/reviews">Reviews</NavLink>
             </div>
           </nav>
         </div>
