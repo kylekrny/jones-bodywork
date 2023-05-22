@@ -7,7 +7,7 @@ export function Hero() {
 
   return (
     <div className="bg-white">
-      <Header/>
+      <Header />
       <div className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
@@ -38,9 +38,8 @@ export function Hero() {
                   Massage therapist that listens to you.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  To me, bodywork is about listening to the body. Looking at and treating the body as a
+                  whole, not parts. I never work on the same body twice and understanding that allows me to tailor each massage to you in the moment.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   {/* <a
