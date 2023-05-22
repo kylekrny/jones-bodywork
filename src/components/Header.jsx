@@ -1,12 +1,7 @@
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Dialog, Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
@@ -29,14 +24,14 @@ export function Header() {
             className="flex items-center justify-between lg:justify-start"
             aria-label="Global"
           >
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Jones Bodywork</span>
               <img
-                alt="Your Company"
+                alt="Jones Bodywork"
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
@@ -97,14 +92,6 @@ export function Header() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>
