@@ -22,24 +22,15 @@ export function Hero() {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <div className="hidden sm:mb-10 sm:flex">
-                  {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
-                    <a
-                      href="#"
-                      className="whitespace-nowrap font-semibold text-indigo-600"
-                    >
-                      <span className="absolute inset-0" aria-hidden="true" />
-                      Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  </div> */}
-                </div>
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <div className="hidden sm:mb-10 sm:flex"></div>
+                <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
                   Massage therapist that listens to you.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  To me, bodywork is about listening to the body. Looking at and treating the body as a
-                  whole, not parts. I never work on the same body twice and understanding that allows me to tailor each massage to you in the moment.
+                  To me, bodywork is about listening to the body. Looking at and
+                  treating the body as a whole, not parts. I never work on the
+                  same body twice and understanding that allows me to tailor
+                  each massage to you in the moment.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   {/* <a

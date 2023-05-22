@@ -9,10 +9,10 @@ export function Footer() {
   return (
     <footer className="bg-slate-50">
       <Container>
-        <div className="py-16">
+        <div className="py-8">
           <div className="flex flex-col items-center">
             <Logo className="mx-auto h-10 w-auto" />
-            <Button href="/contact" color="blue" className="mt-6">
+            <Button href="/contact" className="mt-6 bg-[#3F88C5]">
               <span>
                 Contact <span className="hidden lg:inline">me</span>
               </span>
