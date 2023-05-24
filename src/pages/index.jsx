@@ -4,6 +4,7 @@ import { Hero } from '@/components/Hero'
 import { Features } from '@/components/Features'
 import { Pricing } from '@/components/Pricing'
 import { AboutSection } from '@/components/AboutSection'
+import { CallToAction } from '@/components/CallToAction'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <AboutSection />
         <Features />
+        <CallToAction/>
         <Pricing />
       </main>
       <Footer />
