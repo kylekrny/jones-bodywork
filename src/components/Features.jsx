@@ -2,7 +2,7 @@ const features = [
   {
     name: 'Post Surgical Recovery',
     description:
-      'After the body has incurred a trauma such as surgery, bodywork can be used to begin the "waking up" process of the surgical area. It can help to start reorganizing the body after the , and bring Awareness and blood flow to the region where the trauma occurred. ',
+      'After the body has incurred a trauma such as surgery, bodywork can be used to begin the "waking up" process of the surgical area. It can help to start reorganizing the body after the , and bring Awareness and blood flow to the region where the trauma occurred.',
   },
   {
     name: 'Muscle Fatigue and Soreness',
@@ -22,7 +22,7 @@ const features = [
 
 export function Features() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-12 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
