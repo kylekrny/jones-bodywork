@@ -2,32 +2,21 @@ const features = [
   {
     name: 'Post Surgical Recovery',
     description:
-      'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+      'After the body has incurred a trauma such as surgery, bodywork can be used to begin the "waking up" process of the surgical area. It can help to start reorganizing the body after the , and bring Awareness and blood flow to the region where the trauma occurred. ',
   },
   {
-    name: 'Prenatal / Pregnancy',
+    name: 'Muscle Fatigue and Soreness',
     description:
-      'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
+      'The benefit of massage for both muscle fatigue and soreness can be several... blood flow movement, lactic acid movement, lymph movement, relaxation. For some, this will be a deep and intense session. For others, this will be a gentle and relaxing session.',
   },
   {
-    name: 'Athletic Recovery',
+    name: 'Relaxation',
     description:
-      'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
+      'Depending on the person and what their body needs, massage can be very relaxing. Falling asleep during your session is a compliment to the therapist. Because of the delicate touch of lymphatic massage and craniosacral, both types can be very relaxing.  The deep and intense work can be just as relaxing as well. It all depends on the person, what their body needs and wants during that particular session.',
   },
   {
-    name: 'plastered',
-    description:
-      'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
-  },
-  {
-    name: 'Powerful API.',
-    description:
-      'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
-  },
-  {
-    name: 'Database backups.',
-    description:
-      'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
+    name: 'Muscle Tightness',
+    description: `Just because the muscle feels tight, doesn't mean it actually is.  The nervous system may be guarding for some reason in order to keep the person "safe". Chances are this is related to an old injury/trauma/surgery.  When the body and nervous system start to relax, often times the "tight" or guarded muscle will follow.  The weighted blanket might help with this along with some craniosacral work to get the head and neck to relax.`,
   },
 ]
 
@@ -37,14 +26,14 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Body work can be great for
+            Bodywork can be great for
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            Bodywork is looking at the body as a whole including the emotions.
+            The body is very complex and not linear.
           </p>
         </div>
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {features.map((feature) => (
             <div key={feature.name}>
               <dt className="font-semibold text-gray-900">{feature.name}</dt>

@@ -3,6 +3,7 @@ import profileMobile from "@/images/jeff-square.jpeg"
 import Image from 'next/image'
 import { Header } from './Header'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 
 export function Hero() {
@@ -36,17 +37,17 @@ useEffect(() => {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   To me, bodywork is about listening to the body. Looking at and
                   treating the body as a whole, not parts. I never work on the
-                  same body twice and understanding that allows me to tailor
-                  each massage to you in the moment.
+                  &quot;same&quot; body twice just like we never step in to the
+                  same river twice.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  {/* <a
-                    href="#"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  <Link
+                    href="/contact"
+                    className="hover:bg-[#1C415E] rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Get started
-                  </a>
-                  <a
+                    Contact me
+                  </Link>
+                  {/* <a
                     href="#"
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
@@ -66,9 +67,9 @@ useEffect(() => {
             />
           ) : (
             <Image
-            className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src={profile}
-            alt=""
+              className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
+              src={profile}
+              alt=""
             />
           )}
         </div>
