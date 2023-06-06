@@ -25,7 +25,7 @@ export function Features() {
     <div className="bg-white py-12 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
             Bodywork can be great for
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
