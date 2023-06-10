@@ -32,7 +32,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10">
-          <div className="mb-2 flex gap-x-8">
+          <div className="mb-2 flex flex-col gap-x-8 text-center lg:flex-row">
             <Link
               href="mailto:jeff@jonesbodywork.com"
               className="group"
@@ -48,7 +48,7 @@ export function Footer() {
               (720) 480-4979
             </Link>
             <Link
-              href="tel:7206757448"
+              href="https://www.google.com/maps/place/Jones+Bodywork+LLC/@39.583202,-105.0736117,15z/data=!4m2!3m1!1s0x0:0xf63bfd22009883b?sa=X&ved=2ahUKEwiJgafK8Ln_AhWVLzQIHZqYAxQQ_BJ6BAhYEAg"
               className="group"
               aria-label="Jeff Jones phone number"
             >
