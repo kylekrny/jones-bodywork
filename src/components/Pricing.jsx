@@ -10,11 +10,11 @@ export function Pricing() {
     <div className="bg-white pb-24 sm:pb-12" id="pricing">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
-          <div className="">
+          <div className="sm:mx-auto sm:text-center lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
               Fair and simple pricing
             </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-600 w-2/3">
+            <p className="mt-4 text-lg leading-8 text-gray-600 lg:w-2/3 sm:w-full">
               The time you&apos;re paying for is actual massage time. When you
               pay for a hour long session, you will get an hour long session. I
               believe in being fair.

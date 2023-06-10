@@ -22,17 +22,17 @@ export function SecondaryFeatures() {
   return (
     <div className="mb-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl lg:text-left sm:text-center sm:mx-auto lg:ml-0">
           <h3 className="text-3xl font-bold tracking-tight text-[#3F88C5]">
             Included services
           </h3>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-600 pb-4 lg:pb-0">
             I integrate any and all of these modalities depending on what the
             client is needing. There&apos;s no extra charge.
           </p>
         </div>
-        <div className="mx-auto max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3 sm:mx-auto">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
