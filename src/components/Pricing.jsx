@@ -7,20 +7,20 @@ const stats = [
 
 export function Pricing() {
   return (
-    <div className="bg-white pb-24 sm:pb-32" id="pricing">
+    <div className="bg-white pb-24 sm:pb-12" id="pricing">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <div className="">
+            <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
               Fair and simple pricing
             </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-600">
-              The time you&apos;re paying for is actual massage time. When you pay
-              for a hour long session, you will get an hour long session. I believe in being fair. My prices are not
-              going to make me rich, and I am okay with that.
+            <p className="mt-4 text-lg leading-8 text-gray-600 w-2/3">
+              The time you&apos;re paying for is actual massage time. When you
+              pay for a hour long session, you will get an hour long session. I
+              believe in being fair.
             </p>
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+          <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-600">
@@ -31,10 +31,10 @@ export function Pricing() {
                 </dd>
               </div>
             ))}
-          </dl>
+          </fdl>
           <div className="text-center">
-            <p className="mt-8 font-bold text-lg leading-8 text-gray-600">
-              Actual table time. Tips not accepted.
+            <p className="mt-8 text-lg font-bold leading-8 text-gray-600">
+              TIme on the table. No table setup time. Tips not accepted.
             </p>
           </div>
         </div>

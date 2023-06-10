@@ -1,65 +1,45 @@
-import { InboxIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
+
 
 const features = [
   {
-    name: 'Unlimited inboxes',
+    name: 'Craniosacral',
     description:
-      'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-    href: '#',
-    icon: InboxIcon,
+    "Craniosacral work is working with the cranial bones of the head and the sacrum.  It's very delicate work.  The releases are very subtle and often not felt by the client. There's a different rhythm than the breathing and pulse rate of the body. It can be very relaxing to the client.",
   },
   {
-    name: 'Manage team members',
+    name: 'Cupping',
     description:
-      'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
-    href: '#',
-    icon: UsersIcon,
+    `Cupping has been around for several thousand years. It's about bringing attention, and fluids of the body to a certain area/region. I often use it when someone is unable to handle the pressure of pushing. Cupping can benefit anyone. Often, I will leave the cups on one part of the body while working on another area.`,
   },
   {
-    name: 'Spam report',
+    name: 'Lymphatic drainage',
     description:
-      'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
-    href: '#',
-    icon: TrashIcon,
+      "The lymph system runs throughout the entire body. It's just under the surface of the skin. It's known for transporting waste out of of the body. Many get lymph work when they first feel a cold or sore throat coming on. Many cancer patients receive a lot of lymph work on their journey. It's very gentle and delicate work.",
   },
 ]
 
 export function SecondaryFeatures() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="mb-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Stay on top of customer support
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+        <div className="max-w-2xl">
+          <h3 className="text-3xl font-bold tracking-tight text-[#3F88C5]">
+            Included services
+          </h3>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            I integrate any and all of these modalities depending on what the
+            client is needing. There&apos;s no extra charge.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <div className="mx-auto max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
-                <dt className="text-base font-semibold leading-7 text-white">
-                  <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
-                    <feature.icon
-                      className="h-6 w-6 text-white"
-                      aria-hidden="true"
-                    />
-                  </div>
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   {feature.name}
                 </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-indigo-400"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
                 </dd>
               </div>
             ))}

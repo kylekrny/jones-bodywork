@@ -25,18 +25,19 @@ const faqs = [
         'Call/Text me at 720.480.4979 or email me at jeff@jonesbodywork.com',
     },
     {
-      question: 'Why do you suggest no tips?',
+      question: 'Why do you not accept tips?',
       answer:
-        'My price is my price. I’m content with it. There is no need for the stress or a hidden agenda of tipping. It’s an outdated practice that I do not wish to be a part.',
+        "It's not something I need in my private practice. It can be a source of stress and anxiety for many.  If I want more money, I'll raise my prices.",
     },
     {
       question: 'Do you take insurance? Worker’s comp? HSA? MedPay?',
       answer:
-        "I have an NPI number to take health insurance. Most insurances doesn’t currently cover my services. I do take HSA, as well as Medpay. I presently accept Worker's Comp, but may change that in the future.",
+        "I do. Most insurance companies don't take me as a solo practitioner. You'll need to call to see if your insurance can be used with massage only. Most insurances require it be coupled with PT or chiropractic. I do have an NPI number.",
     },
     {
       question: 'Do you do in-home sessions?',
-      answer: 'No.',
+      answer:
+        'I consider them on a case by case basis. I do charge a travel fee to and from.',
     },
   ],
   [
@@ -54,7 +55,7 @@ const faqs = [
     {
       question: 'Do you use lotions, oils, etc?',
       answer:
-        'If I use an oil, it’s organic coconut oil and that’s it. No lotions or creams. The skin usually has enough oil so it depends on the client and the level of friction that is best for them.',
+        'I only use organic coconut oil when needed.  A lot of the time, the body produces enough oil. The more I can feel of your body, the more your body can feel my touch. Creams and lotions tend to mute this.',
     },
   ],
 ]

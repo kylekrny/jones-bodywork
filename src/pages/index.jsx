@@ -5,6 +5,7 @@ import { Features } from '@/components/Features'
 import { Pricing } from '@/components/Pricing'
 import { AboutSection } from '@/components/AboutSection'
 import { CallToAction } from '@/components/CallToAction'
+import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Features />
         <CallToAction/>
         <Pricing />
+        <SecondaryFeatures/>
       </main>
       <Footer />
     </>
