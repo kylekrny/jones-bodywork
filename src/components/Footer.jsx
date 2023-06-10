@@ -12,7 +12,10 @@ export function Footer() {
         <div className="pt-8">
           <div className="flex flex-col items-center">
             <Logo className="mx-auto h-10 w-auto" />
-            <Button href="/contact" className="mt-6 bg-[#3F88C5]">
+            <Button
+              href="/contact"
+              className="mt-6 bg-[#3F88C5] hover:bg-[#1C415E]"
+            >
               <span>
                 Contact <span className="hidden lg:inline">me</span>
               </span>
@@ -29,7 +32,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10">
-          <div className="flex gap-x-8 mb-2">
+          <div className="mb-2 flex gap-x-8">
             <Link
               href="mailto:jeff@jonesbodywork.com"
               className="group"
