@@ -23,6 +23,7 @@ export default function Home() {
         <Features />
         <CallToAction/>
         <Pricing />
+        <SecondaryFeatures/>
       </main>
       <Footer />
     </>

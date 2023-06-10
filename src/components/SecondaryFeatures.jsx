@@ -6,46 +6,35 @@ import {
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Craniosacral',
     description:
-      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
-    href: '#',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates',
-    description:
-      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
-    href: '#',
+    "Craniosacral work is working with the cranial bones of the head and the sacrum.  It's very delicate work.  The releases are very subtle and often not felt by the client. There's a different rhythm than the breathing and pulse rate of the body. It can be very relaxing to the client.",
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Cupping',
     description:
-      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
-    href: '#',
+    `Cupping has been around for several thousand years. It's about bringing attention, and fluids of the body to a certain area/region. I often use it when someone is unable to handle the pressure of pushing. Cupping can benefit anyone. Often, I will leave the cups on one part of the body while working on another area.`,
     icon: ArrowPathIcon,
+  },
+  {
+    name: 'Lymphatic drainage',
+    description:
+      "The lymph system runs throughout the entire body. It's just under the surface of the skin. It's known for transporting waste out of of the body. Many get lymph work when they first feel a cold or sore throat coming on. Many cancer patients receive a lot of lymph work on their journey. It's very gentle and delicate work.",
+    icon: CloudArrowUpIcon,
   },
 ]
 
-export default function Example() {
+export function SecondaryFeatures() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="mb-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
-          </p>
+        <div className="max-w-2xl">
+          <h3 className="text-3xl font-bold tracking-tight text-[#3F88C5]">
+            Services I include for free
+          </h3>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <div className="mx-auto max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
