@@ -1,27 +1,20 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from '@heroicons/react/20/solid'
+
 
 const features = [
   {
     name: 'Craniosacral',
     description:
     "Craniosacral work is working with the cranial bones of the head and the sacrum.  It's very delicate work.  The releases are very subtle and often not felt by the client. There's a different rhythm than the breathing and pulse rate of the body. It can be very relaxing to the client.",
-    icon: LockClosedIcon,
   },
   {
     name: 'Cupping',
     description:
     `Cupping has been around for several thousand years. It's about bringing attention, and fluids of the body to a certain area/region. I often use it when someone is unable to handle the pressure of pushing. Cupping can benefit anyone. Often, I will leave the cups on one part of the body while working on another area.`,
-    icon: ArrowPathIcon,
   },
   {
     name: 'Lymphatic drainage',
     description:
       "The lymph system runs throughout the entire body. It's just under the surface of the skin. It's known for transporting waste out of of the body. Many get lymph work when they first feel a cold or sore throat coming on. Many cancer patients receive a lot of lymph work on their journey. It's very gentle and delicate work.",
-    icon: CloudArrowUpIcon,
   },
 ]
 
@@ -39,22 +32,10 @@ export function SecondaryFeatures() {
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <feature.icon
-                    className="h-5 w-5 flex-none text-indigo-600"
-                    aria-hidden="true"
-                  />
                   {feature.name}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-indigo-600"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
                 </dd>
               </div>
             ))}
