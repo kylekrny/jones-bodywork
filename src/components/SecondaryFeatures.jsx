@@ -24,8 +24,12 @@ export function SecondaryFeatures() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <h3 className="text-3xl font-bold tracking-tight text-[#3F88C5]">
-            Services I include for free
+            Included services
           </h3>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            I integrate any and all of these modalities depending on what the
+            client is needing. There&apos;s no extra charge.
+          </p>
         </div>
         <div className="mx-auto max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">

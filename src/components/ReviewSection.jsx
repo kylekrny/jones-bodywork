@@ -10,34 +10,103 @@ import avatarImage5 from '@/images/avatars/avatar-5.png'
 const testimonials = [
   [
     {
-      content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+      content: `
+Jeff is extremely knowledgeable and has helped me through a lot of shoulder and neck pain. I have and would recommend him to anyone in need of relief from muscle pain as he’s helped me greatly. I will be going back to him for many years to come for all of my massage needs!`,
       author: {
-        name: 'Sydney Karmes-Walner',
-        role: 'CEO at French Squirrel',
-        image: avatarImage1,
+        name: 'Justin B',
+      },
+    },
+    {
+      content: `
+Jeff is amazing.   I first went to Jeff after an injury that kept me out out work for 2 weeks and with Jeff’s help, I was back to work the following Monday.
+Jeff is professional, knowledgeable and courteous at all times.   He is the only masseuse I will go to.`,
+      author: {
+        name: 'Dave B',
+      },
+    },
+    {
+      content: `
+Jeff does a great job of asking questions, listening, understanding my situation and needs, and working with me on overall goals for best possible outcomes. With his help, I’ve made huge strides in managing CRPS and nerve damage in an affected leg/foot. I always look forward to booking repeat sessions.`,
+      author: {
+        name: 'Sheri C',
+      },
+    },
+    {
+      content: `
+Jeff is an amazing body worker!  His knowledge and skill are critical for helping me feel and perform at my best.`,
+      author: {
+        name: 'Jean S',
+      },
+    },
+    {
+      content: `
+Fantastic massage! Best neck work!`,
+      author: {
+        name: 'Natalie A',
       },
     },
   ],
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        'Jeff is outstanding. I always say he has healing hands. I am athletic and ask a lot of my body sometimes. Jeff puts me back into shape after some grueling workouts. He is without question the best masseuse I have ever used and he will continue to be my go to for all my massage needs!',
       author: {
-        name: 'Jeff Jones',
-        role: 'Founder of Jones Bodywork',
-        image: avatarImage5,
+        name: 'Liz K',
+      },
+    },
+    {
+      content:
+        'This was a great experience.  I must admit I was a little nervous about having a male giving me a massage. From the time I made the appointment to time I left his office  He made me feel at ease. I was very impressed with his abilities and how he  customizes your session to you.. thanks so much. I will be going back and I would refer him to all I meet.',
+      author: {
+        name: 'Kennidee',
+      },
+    },
+    {
+      content: `Jeff Jones is one of the two best massage therapists I have ever had.  Finding an incredible therapist in a city full of mediocre massage therapists is very difficult.  (If you've lived in Denver for long, you know what I mean.)  A good reference can mean everything.  Well, here's your reference.  I consider him a Godsend.`,
+      author: {
+        name: 'Jess L',
+      },
+    },
+    {
+      content: `Jeff is a unique individual within his profession. He's kind, compassionate, caring, and meets his patients where they are. His motto is to keep his patients feeling comfortable and safe. This is a motto I can get behind. Highly recommended!`,
+      author: {
+        name: 'Jesse W',
       },
     },
   ],
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        "Just called around and was able to get into appointment fast. Was in alot pain with knots in the back from work/ getting back into the gym. Called Jeff due to him being near home. Walk out of there feeling 100% better. He has alot of knowledge and knows what he's doing. Had a great conversation through the whole session. Will be going back.",
       author: {
-        name: 'Paul Bellapianta',
-        role: 'Lead Project Manager at iPower Denver Electric',
-        image: avatarImage3,
+        name: 'Maxwell S',
+      },
+    },
+    {
+      content:
+        'Jeff creates a relaxing environment. He listens to your wants and what has brought you in for a massage. I enjoy seeing Jeff for massages and would recommend him to anyone.',
+      author: {
+        name: 'Nick Q',
+      },
+    },
+    {
+      content:
+        'I highly recommend Jeff if you are looking for a wonderful massage and a relaxing experience.',
+      author: {
+        name: 'Elizabeth W',
+      },
+    },
+    {
+      content:
+        'Jeff listened to what I wanted to work on and provided good feedback on how he could help. He also got me in very quickly.',
+      author: {
+        name: 'Lizabeth Q',
+      },
+    },
+    {
+      content: `Jeff is such a knowledgeable massage therapist, and a very kind soul. Definitely go see him!`,
+      author: {
+        name: 'Chloe D',
       },
     },
   ],
