@@ -40,12 +40,21 @@ useEffect(() => {
                   &quot;same&quot; body twice just like we never step in to the
                   same river twice.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
+                <p className="text-md mt-2 font-bold leading-8 text-gray-600">
+                  Same day, weekend and evening appointments available. <br />{' '}
+                </p>
+                <div className="mt-8 flex items-center gap-x-6">
                   <Link
                     href="/contact"
-                    className="hover:bg-[#1C415E] rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#1C415E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Contact me
+                  </Link>
+                  <Link
+                    href="tel:7202804979"
+                    className=" font-bold text-[#3F88C5]"
+                  >
+                    (720) 480 4979
                   </Link>
                   {/* <a
                     href="#"

@@ -2,7 +2,7 @@ const features = [
   {
     name: 'Post Surgical Recovery',
     description:
-      'After the body has incurred a trauma such as surgery, bodywork can be used to begin the "waking up" process of the surgical area. It can help to start reorganizing the body after the , and bring Awareness and blood flow to the region where the trauma occurred.',
+      'After the body has incurred a trauma such as surgery, bodywork can be used to begin the "waking up" process of the surgical area. It can help to start reorganizing the body after the surgery.',
   },
   {
     name: 'Muscle Fatigue and Soreness',
@@ -12,7 +12,7 @@ const features = [
   {
     name: 'Relaxation',
     description:
-      'Depending on the person and what their body needs, massage can be very relaxing. Falling asleep during your session is a compliment to the therapist. Because of the delicate touch of lymphatic massage and craniosacral, both types can be very relaxing.  The deep and intense work can be just as relaxing as well. It all depends on the person, what their body needs and wants during that particular session.',
+      'Depending on the person and what their body needs, bodywork can be very relaxing. Falling asleep during your session is a compliment to the therapist. Because of the delicate touch of lymphatic massage and craniosacral, both types can be very relaxing.  The deep and intense work can be just as relaxing as well. It all depends on the person, what their body needs and wants during that particular session.',
   },
   {
     name: 'Muscle Tightness',
@@ -26,7 +26,7 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
-            Bodywork can be great for
+            Bodywork can be beneficial for
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Bodywork is looking at the body as a whole including the emotions.

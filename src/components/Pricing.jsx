@@ -14,8 +14,12 @@ export function Pricing() {
             <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
               Simple flat rate pricing
             </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-600 lg:w-2/3 sm:w-full">
-              The clock doesn&apos;t start for your session until you are actually on the table.
+            <p className="mt-2 text-md font-bold leading-8 text-gray-600">
+              HSA/FSA, Venmo, Zelle and most major credit / debit cards accepted.
+            </p>
+            <p className="mt-1 text-lg leading-8 text-gray-600 sm:w-full lg:w-2/3">
+              The clock doesn&apos;t start for your session until you are
+              actually on the table.
             </p>
           </div>
           <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
