@@ -65,6 +65,9 @@ const [message, setMessage] = useState(null)
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Let&apos;s Chat
           </h2>
+          <p className="text-md mt-2 font-bold leading-8 text-gray-600">
+            For same day appointments please call or text.{' '}
+          </p>
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Phone: (720) 480-4979 | Email: jeff@jonesbodywork.com
           </p>
@@ -157,7 +160,11 @@ const [message, setMessage] = useState(null)
                 htmlFor="message"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Message <span className='text-xs text-gray-600'>(please include days and times, if you are looking to schedule a session.)</span>
+                Message{' '}
+                <span className="text-xs text-gray-600">
+                  (please include days and times, if you are looking to schedule
+                  a session.)
+                </span>
               </label>
               <div className="mt-2.5">
                 <textarea
