@@ -15,7 +15,7 @@ export function Pricing() {
               Simple flat rate pricing
             </h2>
             <p className="mt-2 text-md font-bold leading-8 text-gray-600">
-              HSA/FSA, Venmo, Zelle and most major credit / debit cards accepted.
+              Cash, HSA/FSA, Venmo, Zelle and most major credit / debit cards accepted.
             </p>
             <p className="mt-1 text-lg leading-8 text-gray-600 sm:w-full lg:w-2/3">
               The clock doesn&apos;t start for your session until you are
