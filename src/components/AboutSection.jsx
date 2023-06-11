@@ -22,12 +22,6 @@ export function AboutSection() {
               practice massage/bodywork. I had only received my first massage in
               2009 and my first massage from a male in 2012.
             </p>
-            {/* <p className="mt-8">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-              odio id et. Id blandit molestie auctor fermentum dignissim. Lacus
-              diam tincidunt ac cursus in vel. Mauris varius vulputate et
-              ultrices hac adipiscing egestas.
-            </p> */}
           </div>
           <div>
             <p>
@@ -36,15 +30,8 @@ export function AboutSection() {
               therapist. I enjoyed it more than I could have possibly imagined.
               I still love it today. In 2017, I fully committed to being a
               bodyworker. I did not renew any training or nutrition
-              certifications, With the goal of having my own practice one day.
+              certifications, with the goal of having my own practice one day.
             </p>
-            {/* <p className="mt-8">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-              odio id et. Id blandit molestie auctor fermentum dignissim. Lacus
-              diam tincidunt ac cursus in vel. Mauris varius vulputate et
-              ultrices hac adipiscing egestas. Iaculis convallis ac tempor et
-              ut. Ac lorem vel integer orci.
-            </p> */}
           </div>
         </div>
       </div>
