@@ -32,7 +32,7 @@ useEffect(() => {
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
-                  Massage therapist that listens to you.
+                  The session is about you and your body.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   To me, bodywork is about listening to the body. Looking at and

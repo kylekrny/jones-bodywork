@@ -22,17 +22,16 @@ export function SecondaryFeatures() {
   return (
     <div className="mb-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="max-w-2xl lg:text-left sm:text-center sm:mx-auto lg:ml-0">
+        <div className="max-w-2xl sm:mx-auto sm:text-center lg:ml-0 lg:text-left">
           <h3 className="text-3xl font-bold tracking-tight text-[#3F88C5]">
             Included services
           </h3>
-          <p className="mt-6 text-lg leading-8 text-gray-600 pb-4 lg:pb-0">
-            I integrate any and all of these modalities depending on what the
-            client is needing. There&apos;s no extra charge.
+          <p className="mt-6 pb-4 text-lg leading-8 text-gray-600 lg:pb-0">
+            Besides &quot;regular&quot; bodywork, the services below can also be part of your session if you desire. Sometimes I will do it intuitively as well.
           </p>
         </div>
         <div className="mx-auto max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3 sm:mx-auto">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 sm:mx-auto lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
@@ -44,6 +43,11 @@ export function SecondaryFeatures() {
               </div>
             ))}
           </dl>
+        </div>
+        <div className="text-center">
+          <p className="mt-8 text-lg font-bold leading-8 text-gray-600 w-1/2 mx-auto">
+            Please feel free to schedule a session when you&apos;re not feeling well. Lymphatic work can be great for recovery.
+          </p>
         </div>
       </div>
     </div>
