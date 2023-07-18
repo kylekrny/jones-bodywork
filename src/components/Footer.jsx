@@ -17,7 +17,7 @@ export function Footer() {
               className="mt-6 bg-[#3F88C5] hover:bg-[#1C415E]"
             >
               <span>
-                Contact <span className="hidden lg:inline">me</span>
+                Schedule <span className="hidden lg:inline">now</span>
               </span>
             </Button>
           </div>
