@@ -13,7 +13,7 @@ export function Footer() {
           <div className="flex flex-col items-center">
             <Logo className="mx-auto h-10 w-auto" />
             <Button
-              href="/contact"
+              href="https://jonesbodywork.as.me/"
               className="mt-6 bg-[#3F88C5] hover:bg-[#1C415E]"
             >
               <span>

@@ -45,10 +45,10 @@ useEffect(() => {
                 </p>
                 <div className="mt-8 flex items-center gap-x-6">
                   <Link
-                    href="/contact"
+                    href="https://jonesbodywork.as.me/"
                     className="rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#1C415E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Contact me
+                    Schedule now
                   </Link>
                   <Link
                     href="tel:7202804979"
