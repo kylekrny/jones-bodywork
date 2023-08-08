@@ -9,7 +9,7 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    'http://127.0.0.1:1337/api/homepage?populate[hero_section][populate][0]=buttons'
+    'http://127.0.0.1:1337/api/homepage?populate[hero_section][populate][0]=buttons&populate=about_section'
   )
   const data = await res.json()
   const props = data
@@ -30,7 +30,7 @@ export default function Home({data}) {
       </Head>
       <main>
         <Hero content={attributes.hero_section} />
-        <AboutSection />
+        <AboutSection content={attributes.about_section} />
         <Features />
         <CallToAction/>
         <Pricing />

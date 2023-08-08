@@ -8,10 +8,7 @@ import { Button } from './Button'
 
 
 export function Hero({ content }) {
-const [windowWidth, setWindowWidth] = useState();
-
-const markdown = content.hero_body_text
-  
+const [windowWidth, setWindowWidth] = useState();  
 useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, [])
