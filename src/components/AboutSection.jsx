@@ -16,6 +16,23 @@ export function AboutSection({ content }) {
         <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
           <div>
             {content.body_text}
+            {/* <p>
+              I left the corporate world behind me in 2006 with an major in
+              math, and a MBA. I went to work at 24 Hour Fitness. In 2014, I
+              went to massage school to be a better trainer, not intending to
+              practice massage/bodywork. I had only received my first massage in
+              2009 and my first massage from a male in 2012.
+            </p>
+          </div>
+          <div>
+            <p>
+              The universe had a different plan. In 2016, I went to work at a
+              local physical therapy clinic, as a bodyworker/licensed massage
+              therapist. I enjoyed it more than I could have possibly imagined.
+              I still love it today. In 2017, I fully committed to being a
+              bodyworker. I did not renew any training or nutrition
+              certifications, with the goal of having my own practice one day.
+            </p> */}
           </div>
         </div>
       </div>

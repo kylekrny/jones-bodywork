@@ -31,7 +31,7 @@ useEffect(() => {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex"></div>
-                <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tight text-sky-600 sm:text-6xl">
                   {content.head_text}
                 </h1>
                 <div className="prose mt-6">

@@ -4,11 +4,6 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
-    colors: {
-      primary: `#3F88C5`,
-      primaryHover: '#1C415E',
-      white: '#FFFFFF',
-    },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
