@@ -7,18 +7,29 @@ import { AboutSection } from '@/components/AboutSection'
 import { CallToAction } from '@/components/CallToAction'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const res = await fetch(
+    'http://127.0.0.1:1337/api/homepage?populate[hero_section][populate][0]=buttons'
+  )
+  const data = await res.json()
+  const props = data
+  return { props }
+} 
+
+export default function Home({data}) {
+  const { attributes } = data
+  console.log(attributes)
   return (
     <>
       <Head>
-        <title>Jeff Jones</title>
+        <title>{attributes.page_title}</title>
         <meta
           name="description"
           content="Massage therapist that listens to you."
         />
       </Head>
       <main>
-        <Hero />
+        <Hero content={attributes.hero_section} />
         <AboutSection />
         <Features />
         <CallToAction/>

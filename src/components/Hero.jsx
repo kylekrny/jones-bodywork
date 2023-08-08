@@ -4,10 +4,13 @@ import Image from 'next/image'
 import { Header } from './Header'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { Button } from './Button'
 
 
-export function Hero() {
+export function Hero({ content }) {
 const [windowWidth, setWindowWidth] = useState();
+
+const markdown = content.hero_body_text
   
 useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -32,36 +35,15 @@ useEffect(() => {
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
-                  The session is about you and your body.
+                  {content.head_text}
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  To me, bodywork is about listening to the body. Looking at and
-                  treating the body as a whole, not parts. I never work on the
-                  &quot;same&quot; body twice just like we never step in to the
-                  same river twice.
-                </p>
-                <p className="text-md mt-2 font-bold leading-8 text-gray-600">
-                  Same day, weekend and evening appointments available. <br />{' '}
-                </p>
+                <div className="prose mt-6">
+                  {content.body_text}
+                </div>
                 <div className="mt-8 flex items-center gap-x-6">
-                  <Link
-                    href="https://jonesbodywork.as.me/"
-                    className="rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#1C415E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Schedule now
-                  </Link>
-                  <Link
-                    href="tel:7202804979"
-                    className=" font-bold text-[#3F88C5]"
-                  >
-                    (720) 480 4979
-                  </Link>
-                  {/* <a
-                    href="#"
-                    className="text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Learn more <span aria-hidden="true">→</span>
-                  </a> */}
+                  {content.buttons.map((button) => (
+                    <Button variant={button.style} color={button.theme} key={button.id}>{button.text}</Button>
+                  ))}
                 </div>
               </div>
             </div>
