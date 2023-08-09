@@ -14,6 +14,9 @@ export function Pricing({ content }) {
             <h2 className="text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl">
               {content.head_text}
             </h2>
+            <div>
+              {content.sub_head_text}
+            </div>
             <p className="mt-2 text-md font-bold leading-8 text-gray-600">
               Cash, HSA/FSA, Venmo, Zelle and most major credit / debit cards accepted.
             </p>
@@ -23,20 +26,20 @@ export function Pricing({ content }) {
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
+            {content.price_item.map((price) => (
+              <div key={price.id} className="flex flex-col bg-gray-400/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-600">
-                  {stat.name}
+                  {price.body_text}
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  {stat.value}
+                  {price.head_text}
                 </dd>
               </div>
             ))}
           </div>
           <div className="text-center">
             <p className="mt-8 text-lg font-bold leading-8 text-gray-600">
-              Tips not accepted.
+              {content.sub_text}
             </p>
           </div>
         </div>
