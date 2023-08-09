@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
 } 
 
 export default function Home({ attributes }) {
-
+  console.log(attributes)
   return (
     <>
       <Head>
@@ -32,7 +32,7 @@ export default function Home({ attributes }) {
         <AboutSection content={attributes.about_section} />
         <Benefits content={attributes.benefits_section}/>
         <CallToAction content={attributes.cta}/>
-        <Pricing content={attributes.pricing} />
+        <Pricing content={attributes.pricing_section} />
         <Services/>
       </main>
       <Footer />

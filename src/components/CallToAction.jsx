@@ -1,24 +1,17 @@
-import Link from 'next/link'
+import { Button } from './Button'
 
-export function CallToAction() {
+export function CallToAction({ content }) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl pb-24 sm:px-6 sm:pb-32 lg:px-8">
-        <div className="bg-[#3F88C5] relative isolate overflow-hidden px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+        <div className="bg-sky-600 relative isolate overflow-hidden px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Looking for reviews?
+            {content.head_text}
           </h2>
-          {/* <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
-            anim id veniam aliqua proident excepteur commodo do ea.
-          </p> */}
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="/reviews"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Read reviews
-            </Link>
+            <Button variant={content.button.style} color={content.button.theme} href={content.button.link}>
+              {content.button.text}
+            </Button>
           </div>
           <svg
             viewBox="0 0 1024 1024"

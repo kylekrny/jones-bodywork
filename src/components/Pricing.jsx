@@ -5,14 +5,14 @@ const stats = [
   { id: 4, name: '90 minutes', value: '$120.00' },
 ]
 
-export function Pricing() {
+export function Pricing({ content }) {
   return (
     <div className="bg-white pb-24 sm:pb-12" id="pricing">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="sm:mx-auto sm:text-center lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
-              Simple flat rate pricing
+            <h2 className="text-3xl font-bold tracking-tight text-sky-600 sm:text-4xl">
+              {content.head_text}
             </h2>
             <p className="mt-2 text-md font-bold leading-8 text-gray-600">
               Cash, HSA/FSA, Venmo, Zelle and most major credit / debit cards accepted.
