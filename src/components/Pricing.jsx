@@ -1,10 +1,3 @@
-const stats = [
-  { id: 1, name: '30 minutes', value: '$40.00' },
-  { id: 2, name: '60 minutes', value: '$80.00' },
-  { id: 3, name: '75 minutes', value: '$100.00' },
-  { id: 4, name: '90 minutes', value: '$120.00' },
-]
-
 export function Pricing({ content }) {
   return (
     <div className="bg-white pb-24 sm:pb-12" id="pricing">
