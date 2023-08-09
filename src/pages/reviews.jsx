@@ -3,17 +3,16 @@ import { Header } from '@/components/Header'
 import { ReviewSection } from '@/components/ReviewSection'
 import Head from 'next/head'
 
-const faqs = [
-  {
-    id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  // More questions...
-]
+export const getStaticProps = async () => {
+  const res = await fetch(
+    'http://127.0.0.1:1337/api/review?populate=review_card'
+  )
+  const data = await res.json()
 
-export default function Reviews() {
+  return { props: data.data }
+} 
+
+export default function Reviews({ attributes }) {
   return (
     <>
       <Head>
@@ -28,12 +27,12 @@ export default function Reviews() {
         <div className="bg-white px-6 pt-24 sm:pt-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Reviews
+              {attributes.hero_text}
             </h2>
           </div>
         </div>
         <div className="bg-white">
-          <ReviewSection/>
+          <ReviewSection content={attributes}/>
         </div>
       </main>
       <Footer />

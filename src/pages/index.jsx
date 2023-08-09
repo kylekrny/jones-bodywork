@@ -9,7 +9,7 @@ import { Services } from '@/components/Services'
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    'http://127.0.0.1:1337/api/homepage?populate[hero_section][populate][0]=buttons&populate=about_section&populate[benefits_section][populate][0]=benefits_cards&populate[cta][populate][0]=button&populate[pricing_section][populate][0]=price_item&populate[services_section][populate][0]=cards&populate[footer][populate][0]=cta&populate[footer][populate][1]=navigation'
+    'http://127.0.0.1:1337/api/homepage?populate[hero_section][populate][0]=buttons&populate=about_section&populate[benefits_section][populate][0]=benefits_cards&populate[cta][populate][0]=button&populate[pricing_section][populate][0]=price_item&populate[services_section][populate][0]=cards'
   )
   const data = await res.json()
   
@@ -17,7 +17,6 @@ export const getStaticProps = async () => {
 } 
 
 export default function Home({ attributes }) {
-  console.log(attributes)
   return (
     <>
       <Head>
@@ -35,7 +34,7 @@ export default function Home({ attributes }) {
         <Pricing content={attributes.pricing_section} />
         <Services content={attributes.services_section}/>
       </main>
-      <Footer content={attributes.footer}/>
+      <Footer/>
     </>
   )
 }

@@ -1,11 +1,4 @@
-import Image from 'next/image'
-
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
 
 const testimonials = [
   [
@@ -120,7 +113,8 @@ function QuoteIcon(props) {
   )
 }
 
-export function ReviewSection() {
+export function ReviewSection({ content }) {
+  console.log(content)
   return (
     <section
       id="testimonials"
@@ -130,48 +124,30 @@ export function ReviewSection() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            I believe testimonials can be one sided. While I do work hard making sure I give my all to every client, not everyone will have a good experience. The reviews you see are pulled directly from google. No filtering. No cherry picking.
+            {content.hero_body_text}
           </p>
         </div>
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
         >
-          {testimonials.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
-                {column.map((testimonial, testimonialIndex) => (
-                  <li key={testimonialIndex}>
-                    <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
-                      <QuoteIcon className="absolute left-6 top-6 fill-slate-100" />
-                      <blockquote className="relative">
-                        <p className="text-lg tracking-tight text-slate-900">
-                          {testimonial.content}
-                        </p>
-                      </blockquote>
-                      <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                        <div>
-                          <div className="font-display text-base text-slate-900">
-                            {testimonial.author.name}
-                          </div>
-                          <div className="mt-1 text-sm text-slate-500">
-                            {testimonial.author.role}
-                          </div>
-                        </div>
-                        {/* <div className="overflow-hidden rounded-full bg-slate-50">
-                          <Image
-                            className="h-14 w-14 object-cover"
-                            src={testimonial.author.image}
-                            alt=""
-                            width={56}
-                            height={56}
-                          />
-                        </div> */}
-                      </figcaption>
-                    </figure>
-                  </li>
-                ))}
-              </ul>
+          {content.review_card.map((review) => (
+            <li key={review.id}>
+                <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+                  <QuoteIcon className="absolute left-6 top-6 fill-slate-100" />
+                  <blockquote className="relative">
+                    <p className="text-lg tracking-tight text-slate-900">
+                      {review.review_body}
+                    </p>
+                  </blockquote>
+                  <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                    <div>
+                      <div className="font-display text-base text-slate-900">
+                        {review.review_author}
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
             </li>
           ))}
         </ul>
@@ -179,3 +155,5 @@ export function ReviewSection() {
     </section>
   )
 }
+
+// <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">

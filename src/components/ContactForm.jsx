@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export function ContactForm() {
+export function ContactForm({ content }) {
 const [submitted, setSubmitted] = useState(false)
 const [message, setMessage] = useState(null)
 
@@ -63,18 +63,18 @@ const [message, setMessage] = useState(null)
         ></div>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Let&apos;s Chat
+            {content.hero_head_text}
           </h2>
           <p className="text-md mt-2 font-bold leading-8 text-gray-600">
-            For same day appointments please call or text.{' '}
+            {content.hero_sub_text}
           </p>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Phone: (720) 480-4979 | Email: jeff@jonesbodywork.com
+            Phone: {content.phone_number} | Email: {content.email_address}
           </p>
           <p className="mt-1 text-lg leading-8 text-gray-600">
             Office:{' '}
             <a href="https://www.google.com/maps/place/7345+S+Pierce+St,+Littleton,+CO+80128/data=!4m2!3m1!1s0x876b7e60d663a621:0xfbcb410553da9129?sa=X&ved=2ahUKEwjyidjEppHyAhURH80KHQiICQ8Q8gF6BAgOEAE">
-              7345 S. Pierce St, Suite 203C Littleton, CO 80128
+              {content.address}
             </a>
           </p>
         </div>

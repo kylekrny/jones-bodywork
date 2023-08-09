@@ -5,10 +5,9 @@ import Head from "next/head"
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    'http://127.0.0.1:1337/api/faq?populate[footer][populate][0]=cta&populate[footer][populate][1]=navigation&populate=faq_card'
+    'http://127.0.0.1:1337/api/faq?populate=faq_card'
   )
   const data = await res.json()
-  console.log(data)
 
   return { props: data.data }
 } 
@@ -16,15 +15,10 @@ export const getStaticProps = async () => {
 
 
 export default function Faq({ attributes }) {
-  console.log(attributes.footer)
   return (
     <>
       <Head>
         <title>{attributes.page_title}</title>
-        <meta
-          name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
-        />
       </Head>
       <main>
         <Header/>
@@ -37,7 +31,7 @@ export default function Faq({ attributes }) {
         </div>
         <FaqComponent content={attributes.faq_card}/>
       </main>
-      <Footer content={attributes.footer}/>
+      <Footer/>
     </>
   )
 }

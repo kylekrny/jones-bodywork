@@ -1,9 +1,3 @@
-const stats = [
-  { label: 'Transactions every 24 hours', value: '44 million' },
-  { label: 'Assets under holding', value: '$119 trillion' },
-  { label: 'New users annually', value: '46,000' },
-]
-
 // "mx-auto max-w-7xl px-12 sm:mt-12 lg:px-12 xl:-mt-12 mt-24
 
 export function AboutSection({ content }) {
