@@ -33,7 +33,7 @@ export default function Home({ attributes }) {
         <Benefits content={attributes.benefits_section}/>
         <CallToAction content={attributes.cta}/>
         <Pricing content={attributes.pricing_section} />
-        <Services/>
+        <Services content={attributes.services_section}/>
       </main>
       <Footer />
     </>
