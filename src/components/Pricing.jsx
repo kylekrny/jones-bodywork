@@ -22,7 +22,7 @@ export function Pricing() {
               actually on the table.
             </p>
           </div>
-          <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-600">
@@ -33,7 +33,7 @@ export function Pricing() {
                 </dd>
               </div>
             ))}
-          </fdl>
+          </div>
           <div className="text-center">
             <p className="mt-8 text-lg font-bold leading-8 text-gray-600">
               Tips not accepted.

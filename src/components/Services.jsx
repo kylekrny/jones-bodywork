@@ -18,7 +18,7 @@ const features = [
   },
 ]
 
-export function SecondaryFeatures() {
+export function Services() {
   return (
     <div className="mb-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
