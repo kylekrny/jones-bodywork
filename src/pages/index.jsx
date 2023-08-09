@@ -35,7 +35,7 @@ export default function Home({ attributes }) {
         <Pricing content={attributes.pricing_section} />
         <Services content={attributes.services_section}/>
       </main>
-      <Footer />
+      <Footer content={attributes.footer}/>
     </>
   )
 }

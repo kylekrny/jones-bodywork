@@ -5,7 +5,7 @@ import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 import { Button } from './Button'
 
-export function Footer() {
+export function Footer({ content }) {
   return (
     <footer className="bg-slate-50">
       <Container>
@@ -13,21 +13,19 @@ export function Footer() {
           <div className="flex flex-col items-center">
             <Logo className="mx-auto h-10 w-auto" />
             <Button
-              href="https://jonesbodywork.as.me/"
-              className="mt-6 bg-[#3F88C5] hover:bg-[#1C415E]"
+              variant={content.cta.style}
+              color={content.cta.theme}
+              href={content.cta.link}
+              className="mt-6"
             >
-              <span>
-                Schedule <span className="hidden lg:inline">now</span>
-              </span>
+              {content.cta.text}
             </Button>
           </div>
           <nav className="mt-8 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="/#about">About</NavLink>
-              <NavLink href="/contact">Contact</NavLink>
-              <NavLink href="/faq">Faq</NavLink>
-              <NavLink href="/#pricing">Pricing</NavLink>
-              <NavLink href="/reviews">Reviews</NavLink>
+              {content.navigation.map((nav) => (
+                <NavLink key={nav.id} href={nav.nav_item_url}>{nav.nav_item_text}</NavLink>
+              ))}
             </div>
           </nav>
         </div>

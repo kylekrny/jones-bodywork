@@ -60,7 +60,7 @@ const faqs = [
   ],
 ]
 
-export function FaqComponent() {
+export function FaqComponent({ content }) {
   return (
     <section
       id="faq"
