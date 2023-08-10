@@ -32,14 +32,21 @@ useEffect(() => {
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-sky-600 sm:text-6xl">
-                  {content.head_text}
+                  {content.intro.head}
                 </h1>
                 <div className="prose mt-6">
-                  {content.body_text}
+                  {content.intro.subHead}
                 </div>
                 <div className="mt-8 flex items-center gap-x-6">
-                  {content.buttons.map((button) => (
-                    <Button variant={button.style} color={button.theme} key={button.id}>{button.text}</Button>
+                  {content.ctaButtons.map((button) => (
+                    <Button 
+                      variant={button.variant}
+                      color={button.color}
+                      key={button.id}
+                      href={button.link}
+                    >
+                      {button.text}
+                    </Button>
                   ))}
                 </div>
               </div>

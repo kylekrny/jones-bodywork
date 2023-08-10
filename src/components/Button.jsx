@@ -11,16 +11,16 @@ const baseStyles = {
 
 const variantStyles = {
   solid: {
-    primary: 'bg-sky-600 text-white hover:bg-sky-900',
-    secondary: 'bg-white text-sky-600 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
+    blue: 'bg-sky-600 text-white hover:bg-sky-900',
+    white: 'bg-white text-sky-600 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
   },
   outline: {
-    primary: 'ring-sky-600 text-sky-600 hover:text-sky-900 hover:ring-sky-900',
-    secondary: 'ring-white, text-white hover:bg-white hover:text-sky-600'
+    blue: 'ring-sky-600 text-sky-600 hover:text-sky-900 hover:ring-sky-900',
+    white: 'ring-white, text-white hover:bg-white hover:text-sky-600'
   },
   link: {
-    primary: 'text-sky-600 hover:text-sky-900',
-    secondary: 'text-white',
+    blue: 'text-sky-600 hover:text-sky-900',
+    white: 'text-white',
   },
 }
 
