@@ -1,18 +1,20 @@
 import Link from 'next/link'
-import { Button } from './Button'
+import { Button } from '../components/Button'
 
-export function CallToAction({ content }) {
+export default function CallToAction({ content }) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl pb-24 sm:px-6 sm:pb-32 lg:px-8">
         <div className="bg-sky-600 relative isolate overflow-hidden px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            {content.head_text}
+            {content.head}
           </h2>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button variant={content.button.style} color={content.button.theme} href={content.button.link}>
-              {content.button.text}
-            </Button>
+            {content.buttons.map((button)=> (
+                <Button key={button.id} variant={button.variant} color={button.color} href={button.link}>
+                  {button.text}
+                </Button>
+              ))}
           </div>
           <svg
             viewBox="0 0 1024 1024"

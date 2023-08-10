@@ -1,13 +1,13 @@
 import profile from '@/images/jeff.jpeg'
 import profileMobile from "@/images/jeff-square.jpeg"
 import Image from 'next/image'
-import { Header } from './Header'
+import { Header } from '../components/Header'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Button } from './Button'
+import { Button } from '../components/Button'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
-
-export function Hero({ content }) {
+export default function Hero({ content }) {
 const [windowWidth, setWindowWidth] = useState();  
 useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -34,9 +34,9 @@ useEffect(() => {
                 <h1 className="text-4xl font-bold tracking-tight text-sky-600 sm:text-6xl">
                   {content.intro.head}
                 </h1>
-                <div className="prose mt-6">
+                <ReactMarkdown className="mt-6">
                   {content.intro.subHead}
-                </div>
+                </ReactMarkdown>
                 <div className="mt-8 flex items-center gap-x-6">
                   {content.ctaButtons.map((button) => (
                     <Button 

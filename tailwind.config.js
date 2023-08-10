@@ -19,16 +19,6 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
-    typography: (theme) => ({
-      DEFAULT: {
-        css: {
-          strong: {
-            color: '#FFFFFF',
-            fontWeight: 600,
-          }
-        }
-      }
-    }),
     extend: {
       borderRadius: {
         '4xl': '2rem',
@@ -42,5 +32,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'), 
+    require('@tailwindcss/typography'),
+  ],
 }
