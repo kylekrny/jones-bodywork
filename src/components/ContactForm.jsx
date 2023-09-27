@@ -14,11 +14,11 @@ const [message, setMessage] = useState(null)
       // Stop the form from submitting and refreshing the page.
       event.preventDefault()
 
+      console.log("not broken")
       // Get data from the form.
       const data = {
         first: event.target.first.value,
         last: event.target.last.value,
-        company: event.target.company.value,
         email: event.target.email.value,
         phone: event.target.phone.value,
         message: event.target.message.value,
@@ -151,7 +151,7 @@ const [message, setMessage] = useState(null)
                   id="phone"
                   required
                   autoComplete="tel"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
