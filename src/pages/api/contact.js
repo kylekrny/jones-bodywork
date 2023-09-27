@@ -3,7 +3,6 @@ import nodemailer from "nodemailer";
 
 async function main(body) {
 
-    console.log("not broken")
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 587,

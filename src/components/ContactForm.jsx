@@ -13,8 +13,6 @@ const [message, setMessage] = useState(null)
     const handleSubmit = async (event) => {
       // Stop the form from submitting and refreshing the page.
       event.preventDefault()
-
-      console.log("not broken")
       // Get data from the form.
       const data = {
         first: event.target.first.value,
