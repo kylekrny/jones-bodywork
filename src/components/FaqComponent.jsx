@@ -25,11 +25,6 @@ const faqs = [
         'Call/Text me at 720.480.4979 or email me at jeff@jonesbodywork.com',
     },
     {
-      question: 'Why do you not accept tips?',
-      answer:
-        "It's not something I need in my private practice. It can be a source of stress and anxiety for many.  If I want more money, I'll raise my prices.",
-    },
-    {
       question: 'Do you take insurance? Worker’s comp? HSA? MedPay?',
       answer:
         "I do. Most insurance companies don't take me as a solo practitioner. You'll need to call to see if your insurance can be used with massage only. Most insurances require it be coupled with PT or chiropractic. I do have an NPI number.",
