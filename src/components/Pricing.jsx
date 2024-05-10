@@ -34,11 +34,6 @@ export function Pricing() {
               </div>
             ))}
           </fdl>
-          <div className="text-center">
-            <p className="mt-8 text-lg font-bold leading-8 text-gray-600">
-              Tips not accepted.
-            </p>
-          </div>
         </div>
       </div>
     </div>
