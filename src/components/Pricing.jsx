@@ -1,8 +1,9 @@
 const stats = [
-  { id: 1, name: '30 minutes', value: '$40.00' },
-  { id: 2, name: '60 minutes', value: '$80.00' },
-  { id: 3, name: '75 minutes', value: '$100.00' },
-  { id: 4, name: '90 minutes', value: '$120.00' },
+  { id: 1, name: '30 minutes', value: '$50.00' },
+  { id: 2, name: '60 minutes', value: '$100.00' },
+  { id: 3, name: '75 minutes', value: '$125.00' },
+  { id: 4, name: '90 minutes', value: '$150.00' },
+  { id: 5, name: '120 minutes', value: '$200.00'},
 ]
 
 export function Pricing() {
@@ -22,7 +23,7 @@ export function Pricing() {
               actually on the table.
             </p>
           </div>
-          <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+          <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-600">
