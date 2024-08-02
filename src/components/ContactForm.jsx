@@ -2,6 +2,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 import { Modal } from './Modal'
 import { dateCheck } from '@/utilities/datecheck'
+import Link from 'next/link'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -92,7 +93,7 @@ const moveDateCheck = dateCheck();
               <p className="text-md mt-1 leading-8 text-red-600">
                 We will be moving August 15th to:
               </p>
-              <p>
+              <p className="mb-2">
                 <a
                   className="text-bold"
                   href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/data=!4m2!3m1!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8?sa=X&ved=1t:242&ictx=111"
@@ -102,6 +103,14 @@ const moveDateCheck = dateCheck();
                   6860 S. Yosemite Ct. Centennial, CO 80112
                 </a>
               </p>
+              <a
+                href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/data=!4m2!3m1!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8?sa=X&ved=1t:242&ictx=111"
+                className="rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#1C415E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                View on Google
+              </a>
             </>
           )}
         </div>

@@ -37,7 +37,7 @@ useEffect(() => {
                     <span className="bg-[#3F88C5]/10 rounded-full px-3 py-1 text-sm font-semibold leading-6 text-[#3F88C5] ring-1 ring-inset ring-indigo-600/10">
                       What&apos;s new
                     </span>
-                  <a href="#" className="inline-flex">
+                  <Link href="/contact" className="inline-flex">
                     <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
                       <span>I am moving August 15th!</span>
                       <ChevronRightIcon
@@ -45,7 +45,7 @@ useEffect(() => {
                         className="h-5 w-5 text-gray-400"
                       />
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
