@@ -5,10 +5,12 @@ import { Header } from './Header'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import { dateCheck } from '@/utilities/datecheck'
 
 
 export function Hero() {
 const [windowWidth, setWindowWidth] = useState();
+const moveDateCheck = dateCheck();
   
 useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -33,19 +35,36 @@ useEffect(() => {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <div className="mt-24 sm:mt-32 lg:mt-16 inline-flex space-x-6">
-                    <span className="bg-[#3F88C5]/10 rounded-full px-3 py-1 text-sm font-semibold leading-6 text-[#3F88C5] ring-1 ring-inset ring-indigo-600/10">
-                      What&apos;s new
-                    </span>
-                  <Link href="/contact" className="inline-flex">
-                    <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                      <span>I am moving August 15th!</span>
-                      <ChevronRightIcon
-                        aria-hidden="true"
-                        className="h-5 w-5 text-gray-400"
-                      />
-                    </span>
-                  </Link>
+                <div className="mt-24 inline-flex space-x-6 sm:mt-32 lg:mt-16">
+                  <span className="rounded-full bg-[#3F88C5]/10 px-3 py-1 text-sm font-semibold leading-6 text-[#3F88C5] ring-1 ring-inset ring-indigo-600/10">
+                    What&apos;s new
+                  </span>
+                  {moveDateCheck ? (
+                    <a
+                      href="https://squareup.com/gift/2Y7C66NK2Y2BN/order"
+                      className="inline-flex"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+                        <span>I offer gift cards!</span>
+                        <ChevronRightIcon
+                          aria-hidden="true"
+                          className="h-5 w-5 text-gray-400"
+                        />
+                      </span>
+                    </a>
+                  ) : (
+                    <Link href="/contact" className="inline-flex">
+                      <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+                        <span>I am moving August 15th!</span>
+                        <ChevronRightIcon
+                          aria-hidden="true"
+                          className="h-5 w-5 text-gray-400"
+                        />
+                      </span>
+                    </Link>
+                  )}
                 </div>
                 <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
