@@ -4,8 +4,10 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 import { Button } from './Button'
+import { dateCheck } from '@/utilities/datecheck'
 
 export function Footer() {
+  const moveDateCheck = dateCheck('2024-08-15')
   return (
     <footer className="bg-slate-50">
       <Container>
@@ -47,13 +49,27 @@ export function Footer() {
             >
               (720) 480-4979
             </Link>
-            <Link
-              href="https://www.google.com/maps/place/Jones+Bodywork+LLC/@39.583202,-105.0736117,15z/data=!4m2!3m1!1s0x0:0xf63bfd22009883b?sa=X&ved=2ahUKEwiJgafK8Ln_AhWVLzQIHZqYAxQQ_BJ6BAhYEAg"
-              className="group"
-              aria-label="Jeff Jones phone number"
-            >
-              7345 S. Pierce St, Suite 203C Littleton, CO 80128
-            </Link>
+            {moveDateCheck ? (
+              <Link
+                href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/@39.5928725,-104.8848904,17z/data=!3m1!4b1!4m6!3m5!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8!8m2!3d39.5928725!4d-104.8848904!16s%2Fg%2F11b8v4fr8k?entry=ttu"
+                className="group"
+                aria-label="Jeff Jones address"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                6860 S Yosemite Ct, Centennial, CO 80112
+              </Link>
+            ) : (
+              <Link
+                href="https://www.google.com/maps/place/Jones+Bodywork+LLC/@39.583202,-105.0736117,15z/data=!4m2!3m1!1s0x0:0xf63bfd22009883b?sa=X&ved=2ahUKEwiJgafK8Ln_AhWVLzQIHZqYAxQQ_BJ6BAhYEAg"
+                className="group"
+                rel="noreferrer noopener"
+                target="_blank"
+                aria-label="Jeff Jones address"
+              >
+                7345 S. Pierce St, Suite 203C Littleton, CO 80128
+              </Link>
+            )}
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
             Copyright &copy; {new Date().getFullYear()} Jones Bodywork. All
