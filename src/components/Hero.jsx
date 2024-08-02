@@ -10,7 +10,8 @@ import { dateCheck } from '@/utilities/datecheck'
 
 export function Hero() {
 const [windowWidth, setWindowWidth] = useState();
-const moveDateCheck = dateCheck();
+const moveDateCheck = dateCheck('2024-08-15')
+const whatsNewDate = dateCheck('2024-09-15')
   
 useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -35,6 +36,7 @@ useEffect(() => {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                {!whatsNewDate && (
                 <div className="mt-24 inline-flex space-x-6 sm:mt-32 lg:mt-16">
                   <span className="rounded-full bg-[#3F88C5]/10 px-3 py-1 text-sm font-semibold leading-6 text-[#3F88C5] ring-1 ring-inset ring-indigo-600/10">
                     What&apos;s new
@@ -66,6 +68,7 @@ useEffect(() => {
                     </Link>
                   )}
                 </div>
+                )}
                 <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
                   The session is about you and your body.

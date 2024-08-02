@@ -11,7 +11,7 @@ function classNames(...classes) {
 export function ContactForm() {
 const [submitted, setSubmitted] = useState(false)
 const [message, setMessage] = useState(null)
-const moveDateCheck = dateCheck();
+const moveDateCheck = dateCheck('2024-08-15')
 
 
     const handleSubmit = async (event) => {
