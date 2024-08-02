@@ -1,6 +1,7 @@
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 import { Modal } from './Modal'
+import { dateCheck } from '@/utilities/datecheck'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -9,6 +10,8 @@ function classNames(...classes) {
 export function ContactForm() {
 const [submitted, setSubmitted] = useState(false)
 const [message, setMessage] = useState(null)
+const moveDateCheck = dateCheck();
+
 
     const handleSubmit = async (event) => {
       // Stop the form from submitting and refreshing the page.
@@ -66,19 +69,45 @@ const [message, setMessage] = useState(null)
           <p className="text-md mt-2 font-bold leading-8 text-gray-600">
             For same day appointments please call or text.{' '}
           </p>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
+          <p className="text-md mt-2 leading-8 text-gray-600">
             Phone: (720) 480-4979 | Email: jeff@jonesbodywork.com
           </p>
-          <p className="mt-1 text-lg leading-8 text-gray-600">
-            Office:{' '}
-            <a href="https://www.google.com/maps/place/7345+S+Pierce+St,+Littleton,+CO+80128/data=!4m2!3m1!1s0x876b7e60d663a621:0xfbcb410553da9129?sa=X&ved=2ahUKEwjyidjEppHyAhURH80KHQiICQ8Q8gF6BAgOEAE">
-              7345 S. Pierce St, Suite 203C Littleton, CO 80128
-            </a>
-          </p>
+          {moveDateCheck ? (
+            <>
+              <p className="text-md mt-1 leading-8 text-gray-600">
+                Office:{' '}
+                <a href="https://www.google.com/maps/place/7345+S+Pierce+St,+Littleton,+CO+80128/data=!4m2!3m1!1s0x876b7e60d663a621:0xfbcb410553da9129?sa=X&ved=2ahUKEwjyidjEppHyAhURH80KHQiICQ8Q8gF6BAgOEAE">
+                  6860 S. Yosemite Ct. Centennial, CO 80112
+                </a>
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-md mt-1 leading-8 text-gray-600">
+                Office:{' '}
+                <a href="https://www.google.com/maps/place/7345+S+Pierce+St,+Littleton,+CO+80128/data=!4m2!3m1!1s0x876b7e60d663a621:0xfbcb410553da9129?sa=X&ved=2ahUKEwjyidjEppHyAhURH80KHQiICQ8Q8gF6BAgOEAE">
+                  7345 S. Pierce St, Suite 203C Littleton, CO 80128
+                </a>
+              </p>
+              <p className="text-md mt-1 leading-8 text-red-600">
+                We will be moving August 15th to:
+              </p>
+              <p>
+                <a
+                  className="text-bold"
+                  href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/data=!4m2!3m1!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8?sa=X&ved=1t:242&ictx=111"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  6860 S. Yosemite Ct. Centennial, CO 80112
+                </a>
+              </p>
+            </>
+          )}
         </div>
         <form
           onSubmit={handleSubmit}
-          className="mx-auto mt-16 max-w-xl sm:mt-20"
+          className="mx-auto mt-8 max-w-xl sm:mt-10"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
