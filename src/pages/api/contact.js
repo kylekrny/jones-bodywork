@@ -16,7 +16,7 @@ async function main(body) {
 
     await transporter.sendMail({
         from: `Jones Bodywork <noreply@jonesbodywork.com>`,
-        to: "kyledkearney@gmail.com",
+        to: "jeff@jonesbodywork.com",
         subject: "New Form Submission",
         text: `name: ${body.first} ${body.last},\r message: ${body.message},\r email: ${body.email}, \r phone: ${body.phone},\r`,
     })
