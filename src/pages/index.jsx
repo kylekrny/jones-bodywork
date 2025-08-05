@@ -6,6 +6,7 @@ import { Pricing } from '@/components/Pricing'
 import { AboutSection } from '@/components/AboutSection'
 import { CallToAction } from '@/components/CallToAction'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import Listening from '@/components/Listening'
 
 export default function Home() {
   return (
@@ -20,10 +21,11 @@ export default function Home() {
       <main>
         <Hero />
         <AboutSection />
+        <Listening />
         <Features />
-        <CallToAction/>
+        <CallToAction />
         <Pricing />
-        <SecondaryFeatures/>
+        <SecondaryFeatures />
       </main>
       <Footer />
     </>

@@ -1,11 +1,9 @@
-import Link from "next/link"
+import Link from 'next/link'
 
 const stats = [
-  { id: 1, name: '30 minutes', value: '$50.00' },
-  { id: 2, name: '60 minutes', value: '$100.00' },
-  { id: 3, name: '75 minutes', value: '$125.00' },
-  { id: 4, name: '90 minutes', value: '$150.00' },
-  { id: 5, name: '120 minutes', value: '$200.00'},
+  { id: 2, name: '60 minutes', value: '$110.00' },
+  { id: 3, name: '75 minutes', value: '$140.00' },
+  { id: 4, name: '90 minutes', value: '$165.00' },
 ]
 
 export function Pricing() {
@@ -17,10 +15,7 @@ export function Pricing() {
             <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
               Simple flat rate pricing
             </h2>
-            <p className="text-md mt-2 font-bold leading-8 text-gray-600">
-              Cash, HSA/FSA, Venmo, Zelle, Apple Pay, Google Pay and most major
-              credit / debit cards accepted.
-            </p>
+
             <p className="mb-2 mt-1 text-lg leading-8 text-gray-600 sm:w-full lg:w-2/3">
               The clock doesn&apos;t start for your session until you are
               actually on the table.
@@ -32,7 +27,7 @@ export function Pricing() {
               Purchase a gift card
             </Link>
           </div>
-          <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5">
+          <fdl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-3 lg:grid-cols-3">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
                 <dt className="text-sm font-semibold leading-6 text-gray-600">
@@ -44,6 +39,12 @@ export function Pricing() {
               </div>
             ))}
           </fdl>
+          <p className="text-md mt-4 text-center font-bold leading-8 text-gray-600">
+            Cash, Venmo, Zelle encouraged.
+          </p>
+          <p className="text-md mt-1 text-center font-bold italic text-gray-600">
+            Credit/Debit cards and HSA incur a 3% processing fee.
+          </p>
         </div>
       </div>
     </div>
