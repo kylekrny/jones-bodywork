@@ -13,7 +13,7 @@ export function Pricing() {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="sm:mx-auto sm:text-center lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-[#3F88C5] sm:text-4xl">
-              Simple flat rate pricing
+              Bodywork Pricing
             </h2>
 
             <p className="mb-2 mt-1 text-lg leading-8 text-gray-600 sm:w-full lg:w-2/3">
