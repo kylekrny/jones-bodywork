@@ -16,6 +16,10 @@ const features = [
     description:
       "The lymph system runs throughout the entire body. It's just under the surface of the skin. It's known for transporting waste out of of the body. Many get lymph work when they first feel a cold or sore throat coming on. Many cancer patients receive a lot of lymph work on their journey. It's very gentle and delicate work.",
   },
+  {
+    name: 'Biofield Tuning Fork',
+    description: "Tuning forks are used to bring vibration into the body. The sound waves travel through the tissues and can help release tension and promote balance. Different forks produce different tones, which can be used to target specific areas. It's a gentle but powerful way of working with both sound and touch together."
+  }
 ]
 
 export function SecondaryFeatures() {
@@ -31,7 +35,7 @@ export function SecondaryFeatures() {
           </p>
         </div>
         <div className="mx-auto max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 sm:mx-auto lg:max-w-none lg:grid-cols-3">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 sm:mx-auto lg:max-w-none lg:grid-cols-2">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">

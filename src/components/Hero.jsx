@@ -9,7 +9,6 @@ import { dateCheck } from '@/utilities/datecheck'
 
 export function Hero() {
   const [windowWidth, setWindowWidth] = useState()
-  const moveDateCheck = dateCheck('2024-08-15')
   const whatsNewDate = dateCheck('2026-01-01')
 
   useEffect(() => {
@@ -70,7 +69,7 @@ export function Hero() {
                     Schedule now
                   </Link>
                   <Link
-                    href="tel:7202804979"
+                    href="tel:7204804979"
                     className=" font-bold text-[#3F88C5]"
                   >
                     (720) 480 4979

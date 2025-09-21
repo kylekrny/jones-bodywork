@@ -11,7 +11,6 @@ function classNames(...classes) {
 export function ContactForm() {
 const [submitted, setSubmitted] = useState(false)
 const [message, setMessage] = useState(null)
-const moveDateCheck = dateCheck('2024-08-15')
 
 
     const handleSubmit = async (event) => {
@@ -73,46 +72,12 @@ const moveDateCheck = dateCheck('2024-08-15')
           <p className="text-md mt-2 leading-8 text-gray-600">
             Phone: (720) 480-4979 | Email: jeff@jonesbodywork.com
           </p>
-          {moveDateCheck ? (
-            <>
               <p className="text-md mt-1 leading-8 text-gray-600">
                 Office:{' '}
-                <a href="https://www.google.com/maps/place/7345+S+Pierce+St,+Littleton,+CO+80128/data=!4m2!3m1!1s0x876b7e60d663a621:0xfbcb410553da9129?sa=X&ved=2ahUKEwjyidjEppHyAhURH80KHQiICQ8Q8gF6BAgOEAE">
+                <a href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/data=!4m2!3m1!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8?sa=X&ved=1t:242&ictx=111">
                   6860 S. Yosemite Ct. Centennial, CO 80112
                 </a>
               </p>
-            </>
-          ) : (
-            <>
-              <p className="text-md mt-1 leading-8 text-gray-600">
-                Office:{' '}
-                <a href="https://www.google.com/maps/place/7345+S+Pierce+St,+Littleton,+CO+80128/data=!4m2!3m1!1s0x876b7e60d663a621:0xfbcb410553da9129?sa=X&ved=2ahUKEwjyidjEppHyAhURH80KHQiICQ8Q8gF6BAgOEAE">
-                  7345 S. Pierce St, Suite 203C Littleton, CO 80128
-                </a>
-              </p>
-              <p className="text-md mt-1 leading-8 text-red-600">
-                We will be moving August 15th to:
-              </p>
-              <p className="mb-2">
-                <a
-                  className="text-bold"
-                  href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/data=!4m2!3m1!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8?sa=X&ved=1t:242&ictx=111"
-                  target="blank"
-                  rel="noopener noreferrer"
-                >
-                  6860 S. Yosemite Ct. Centennial, CO 80112
-                </a>
-              </p>
-              <a
-                href="https://www.google.com/maps/place/Centennial+building,+6860+S+Yosemite+Ct,+Centennial,+CO+80112/data=!4m2!3m1!1s0x876c867921fcbcb1:0x17d4e1fe616be5d8?sa=X&ved=1t:242&ictx=111"
-                className="rounded-md bg-[#3F88C5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#1C415E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                View on Google
-              </a>
-            </>
-          )}
         </div>
         <form
           onSubmit={handleSubmit}
