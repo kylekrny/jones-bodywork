@@ -1,6 +1,3 @@
-import profile from '@/images/jeff.jpeg'
-import profileMobile from '@/images/jeff-square.jpeg'
-import Image from 'next/image'
 import { Header } from './Header'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -20,7 +17,7 @@ export function Hero() {
       <Header />
       <div className="relative">
         <div className="mx-auto max-w-7xl">
-          <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
+          <div className="relative z-10 pt-14 lg:w-full lg:max-w-6xl">
             <svg
               className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block"
               viewBox="0 0 100 100"
@@ -31,7 +28,7 @@ export function Hero() {
             </svg>
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-5xl">
                 {!whatsNewDate && (
                   <div className="mt-24 inline-flex space-x-6 sm:mt-32 lg:mt-16">
                     <span className="rounded-full bg-[#7A306C]/10 px-3 py-1 text-sm font-semibold leading-6 text-[#7A306C] ring-1 ring-inset ring-[#7A306C]/5">
@@ -49,10 +46,10 @@ export function Hero() {
                   </div>
                 )}
                 <div className="hidden sm:mb-10 sm:flex"></div>
-                <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tight text-[#3F88C5] sm:text-8xl">
                   The session is about you and your body.
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-lg leading-8 text-gray-600 lg:max-w-2xl">
                   To me, bodywork is about listening to the body. Looking at and
                   treating the body as a whole, not parts. I never work on the
                   &quot;same&quot; body twice just like we never step in to the
@@ -84,21 +81,6 @@ export function Hero() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          {windowWidth < 1023 ? (
-            <Image
-              className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-              src={profileMobile}
-              alt=""
-            />
-          ) : (
-            <Image
-              className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-              src={profile}
-              alt=""
-            />
-          )}
         </div>
       </div>
     </div>
